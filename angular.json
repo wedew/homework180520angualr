@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "homework180520"
+    }
+  },
+  "defaultProject": "homework180520",
+  "cli": {
+    "analytics": "7e833833-b7b8-4651-85ad-9ef3929eb588"
+  }
 }

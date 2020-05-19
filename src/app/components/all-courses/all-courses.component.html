@@ -1,0 +1,16 @@
+<br/><br/>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Duration</th>
+    <th>StartDate</th>
+  </tr>
+  <tr *ngFor="let c of course">
+    <th>{{c.id}}</th>
+    <th>{{c.title}}</th>
+    <th>{{c.duration}}</th>
+    <th>{{c.startDate | date: 'dd/MM/yyyy'}}</th>
+  </tr>
+
+</table>

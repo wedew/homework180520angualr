@@ -1,0 +1,21 @@
+<br/><br/>
+<input type="text" placeholder="enter course title" [(ngModel)]="courseName" />
+<input type="button" value="search" (click)="getCourseByName()" />
+<br/><br/><br/><br/>
+<table *ngIf="course">
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Duration</th>
+    <th>StartDate</th>
+  </tr>
+  <tr>
+    <th>{{course.id}}</th>
+    <th>{{course.title}}</th>
+    <th>{{course.duration}}</th>
+    <th>{{course.startDate | date: 'dd/MM/yyyy'}}</th>
+  </tr>
+
+</table>
+<br/><br/>
+<div *ngIf="plug">this course does not exist..</div>
